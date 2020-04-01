@@ -1,0 +1,28 @@
+{
+  "account": "int",
+  "vpc": "000",
+  "pUseThreeAZs": "y",
+  "pSharedServicesVPC": "shared-services",
+
+  "pAppName": "",
+  "pCreateAppSubnets": "y",
+  "pAppPrivateSubnetACIDR": "",
+  "pAppPrivateSubnetBCIDR": "",
+  "pAppPrivateSubnetCCIDR": "",
+  "pAppSupernet": "",
+  "pCreateDBSubnets": "y",
+  "pDBPrivateSubnetACIDR": "",
+  "pDBPrivateSubnetBCIDR": "",
+  "pDBPrivateSubnetCCIDR": "",
+  "pDBSupernet": "",
+  "pCreateSearchSubnets": "y",
+  "pSearchPrivateSubnetACIDR": "",
+  "pSearchPrivateSubnetBCIDR": "",
+  "pSearchPrivateSubnetCCIDR": "",
+  "pSearchSupernet": "",
+  "pCreateProxySubnets": "n",
+  "pProxyPrivateSubnetACIDR": "",
+  "pProxyPrivateSubnetBCIDR":"",
+  "pProxyPrivateSubnetCCIDR": "",
+  "pProxySupernet": ""
+}

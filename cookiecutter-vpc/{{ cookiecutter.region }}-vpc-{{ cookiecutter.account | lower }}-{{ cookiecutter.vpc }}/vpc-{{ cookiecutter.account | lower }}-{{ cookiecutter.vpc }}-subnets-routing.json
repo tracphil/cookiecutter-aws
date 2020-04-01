@@ -1,0 +1,61 @@
+{
+  "StackName": "NLM-{{ cookiecutter.account | upper }}-{{ cookiecutter.account | lower }}-{{ cookiecutter.vpc }}-subnets-routing",
+  "Parameters": [
+    {
+      "ParameterKey": "pAWSAccount",
+      "ParameterValue": "NLM-{{ cookiecutter.account | upper }}"
+    },
+    {
+      "ParameterKey": "pSharedServicesVPC",
+      "ParameterValue": "shared-services"
+    },
+    {
+      "ParameterKey": "pVPCName",
+      "ParameterValue": "{{ cookiecutter.account | lower }}-{{ cookiecutter.vpc }}"
+    },
+    {
+      "ParameterKey": "pUseThreeAZs",
+      "ParameterValue": "{{ cookiecutter.pUseThreeAZs }}"
+    },
+    {
+      "ParameterKey": "pCreateBambooSubnets",
+      "ParameterValue": "{{ cookiecutter.pCreateBambooSubnets }}"
+    },
+    {
+      "ParameterKey": "pBambooSupernet",
+      "ParameterValue": "{{ cookiecutter.pBambooSupernet }}"
+    },
+    {
+      "ParameterKey": "pBambooPrivateSubnetACIDR",
+      "ParameterValue": "{{ cookiecutter.pBambooPrivateSubnetACIDR }}"
+    },
+    {
+      "ParameterKey": "pBambooPrivateSubnetBCIDR",
+      "ParameterValue": "{{ cookiecutter.pBambooPrivateSubnetBCIDR }}"
+    },
+    {
+      "ParameterKey": "pBambooPrivateSubnetCCIDR",
+      "ParameterValue": "{{ cookiecutter.pBambooPrivateSubnetCCIDR }}"
+    },
+    {
+      "ParameterKey": "pCreateLambdaSubnets",
+      "ParameterValue": "{{ cookiecutter.pCreateLambdaSubnets }}"
+    },
+    {
+      "ParameterKey": "pLambdaSupernet",
+      "ParameterValue": "{{ cookiecutter.pLambdaSupernet }}"
+    },
+    {
+      "ParameterKey": "pLambdaPrivateSubnetACIDR",
+      "ParameterValue": "{{ cookiecutter.pLambdaPrivateSubnetACIDR }}"
+    },
+    {
+      "ParameterKey": "pLambdaPrivateSubnetBCIDR",
+      "ParameterValue": "{{ cookiecutter.pLambdaPrivateSubnetBCIDR }}"
+    },
+    {
+      "ParameterKey": "pLambdaPrivateSubnetCCIDR",
+      "ParameterValue": "{{ cookiecutter.pLambdaPrivateSubnetCCIDR }}"
+    }
+  ]
+}

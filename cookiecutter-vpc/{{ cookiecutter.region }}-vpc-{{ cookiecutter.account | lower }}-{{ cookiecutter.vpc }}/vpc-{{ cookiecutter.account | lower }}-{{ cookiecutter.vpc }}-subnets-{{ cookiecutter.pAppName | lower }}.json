@@ -1,0 +1,105 @@
+{
+  "StackName": "NLM-{{ cookiecutter.account | upper }}-{{ cookiecutter.account | lower }}-{{ cookiecutter.vpc }}-subnets-{{ cookiecutter.pAppName }}",
+  "Parameters": [
+    {
+      "ParameterKey": "pAWSAccount",
+      "ParameterValue": "NLM-{{ cookiecutter.account | upper }}"
+    },
+    {
+      "ParameterKey": "pSharedServicesVPC",
+      "ParameterValue": "{{ cookiecutter.pSharedServicesVPC }}"
+    },
+    {
+      "ParameterKey": "pVPCName",
+      "ParameterValue": "{{ cookiecutter.account | lower }}-{{ cookiecutter.vpc }}"
+    },
+    {
+      "ParameterKey": "pAppName",
+      "ParameterValue": "{{ cookiecutter.pAppName }}"
+    },
+    {
+      "ParameterKey": "pUseThreeAZs",
+      "ParameterValue": "{{ cookiecutter.pUseThreeAZs }}"
+    },
+    {
+      "ParameterKey": "pCreateAppSubnets",
+      "ParameterValue": "{{ cookiecutter.pCreateAppSubnets }}"
+    },
+    {
+      "ParameterKey": "pAppSupernet",
+      "ParameterValue": "{{ cookiecutter.pAppSupernet }}"
+    },
+    {
+      "ParameterKey": "pAppPrivateSubnetACIDR",
+      "ParameterValue": "{{ cookiecutter.pAppPrivateSubnetACIDR }}"
+    },
+    {
+      "ParameterKey": "pAppPrivateSubnetBCIDR",
+      "ParameterValue": "{{ cookiecutter.pAppPrivateSubnetBCIDR }}"
+    },
+    {
+      "ParameterKey": "pAppPrivateSubnetCCIDR",
+      "ParameterValue": "{{ cookiecutter.pAppPrivateSubnetCCIDR }}"
+    },
+    {
+      "ParameterKey": "pCreateDBSubnets",
+      "ParameterValue": "{{ cookiecutter.pCreateDBSubnets }}"
+    },
+    {
+      "ParameterKey": "pDBSupernet",
+      "ParameterValue": "{{ cookiecutter.pDBSupernet }}"
+    },
+    {
+      "ParameterKey": "pDBPrivateSubnetACIDR",
+      "ParameterValue": "{{ cookiecutter.pDBPrivateSubnetACIDR }}"
+    },
+    {
+      "ParameterKey": "pDBPrivateSubnetBCIDR",
+      "ParameterValue": "{{ cookiecutter.pDBPrivateSubnetBCIDR }}"
+    },
+    {
+      "ParameterKey": "pDBPrivateSubnetCCIDR",
+      "ParameterValue": "{{ cookiecutter.pDBPrivateSubnetCCIDR }}"
+    },
+    {
+      "ParameterKey": "pCreateSearchSubnets",
+      "ParameterValue": "{{ cookiecutter.pCreateSearchSubnets }}"
+    },
+    {
+      "ParameterKey": "pSearchSupernet",
+      "ParameterValue": "{{ cookiecutter.pSearchSupernet }}"
+    },
+    {
+      "ParameterKey": "pSearchPrivateSubnetACIDR",
+      "ParameterValue": "{{ cookiecutter.pSearchPrivateSubnetACIDR }}"
+    },
+    {
+      "ParameterKey": "pSearchPrivateSubnetBCIDR",
+      "ParameterValue": "{{ cookiecutter.pSearchPrivateSubnetBCIDR }}"
+    },
+    {
+      "ParameterKey": "pSearchPrivateSubnetCCIDR",
+      "ParameterValue": "{{ cookiecutter.pSearchPrivateSubnetCCIDR }}"
+    },
+    {
+      "ParameterKey": "pCreateProxySubnets",
+      "ParameterValue": "{{ cookiecutter.pCreateProxySubnets }}"
+    },
+    {
+      "ParameterKey": "pProxySupernet",
+      "ParameterValue": "{{ cookiecutter.pProxySupernet }}"
+    },
+    {
+      "ParameterKey": "pProxyPrivateSubnetACIDR",
+      "ParameterValue": "{{ cookiecutter.pProxyPrivateSubnetACIDR }}"
+    },
+    {
+      "ParameterKey": "pProxyPrivateSubnetBCIDR",
+      "ParameterValue": "{{ cookiecutter.pProxyPrivateSubnetBCIDR }}"
+    },
+    {
+      "ParameterKey": "pProxyPrivateSubnetCCIDR",
+      "ParameterValue": "{{ cookiecutter.pProxyPrivateSubnetCCIDR }}"
+    }
+    ]
+}

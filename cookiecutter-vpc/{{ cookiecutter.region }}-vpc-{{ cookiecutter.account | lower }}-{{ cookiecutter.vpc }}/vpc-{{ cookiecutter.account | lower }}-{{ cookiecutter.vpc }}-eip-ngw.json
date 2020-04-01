@@ -1,0 +1,21 @@
+{
+  "StackName": "NLM-{{ cookiecutter.account | upper }}-{{ cookiecutter.account | lower }}-{{ cookiecutter.vpc }}-eip-ngw",
+  "Parameters": [
+    {
+      "ParameterKey": "pAWSAccount",
+      "ParameterValue": "NLM-{{ cookiecutter.account | upper }}"
+    },
+    {
+      "ParameterKey": "pVPCName",
+      "ParameterValue": "{{ cookiecutter.account | lower }}-{{ cookiecutter.vpc }}"
+    },
+    {
+      "ParameterKey": "pEipName",
+      "ParameterValue": "nat"
+    },
+    {
+      "ParameterKey": "pUseThreeAZs",
+      "ParameterValue": "y"
+    }
+  ]
+}

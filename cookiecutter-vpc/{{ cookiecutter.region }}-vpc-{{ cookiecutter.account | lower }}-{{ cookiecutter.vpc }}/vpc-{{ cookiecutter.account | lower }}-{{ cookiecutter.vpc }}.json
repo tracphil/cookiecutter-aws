@@ -1,0 +1,65 @@
+{
+  "StackName": "NLM-{{ cookiecutter.account | upper }}-{{ cookiecutter.account | lower }}-{{ cookiecutter.vpc }}",
+  "Parameters": [
+    {
+      "ParameterKey": "pRegionDomain",
+      "ParameterValue": "{{ cookiecutter.pRegionDomain }}.compute.internal"
+    },
+    {
+      "ParameterKey": "pUseThreeAZs",
+      "ParameterValue": "y"
+    },
+    {
+      "ParameterKey": "pRegionAZ1Name",
+      "ParameterValue": "{{ cookiecutter.pRegionAZ1Name }}"
+    },
+    {
+      "ParameterKey": "pRegionAZ2Name",
+      "ParameterValue": "{{ cookiecutter.pRegionAZ2Name }}"
+    },
+    {
+      "ParameterKey": "pRegionAZ3Name",
+      "ParameterValue": "{{ cookiecutter.pRegionAZ3Name }}"
+    },
+    {
+      "ParameterKey": "pAWSAccount",
+      "ParameterValue": "NLM-{{ cookiecutter.account | upper }}"
+    },
+    {
+      "ParameterKey": "pVPCName",
+      "ParameterValue": "{{ cookiecutter.account | lower }}-{{ cookiecutter.vpc }}"
+    },
+    {
+      "ParameterKey": "pVPCCIDR",
+      "ParameterValue": "{{ cookiecutter.pVPCCIDR }}"
+    },
+    {
+      "ParameterKey": "pPublicSupernet",
+      "ParameterValue": "{{ cookiecutter.pPublicSupernet }}"
+    },
+    {
+      "ParameterKey": "pPublicSubnetACIDR",
+      "ParameterValue": "{{ cookiecutter.pPublicSubnetACIDR }}"
+    },
+    {
+      "ParameterKey": "pPublicSubnetBCIDR",
+      "ParameterValue": "{{ cookiecutter.pPublicSubnetBCIDR }}"
+    },
+    {
+      "ParameterKey": "pPublicSubnetCCIDR",
+      "ParameterValue": "{{ cookiecutter.pPublicSubnetCCIDR }}"
+    },
+    {
+      "ParameterKey": "pPeerWithSharedServiceVPC",
+      "ParameterValue": "{{ cookiecutter.pPeerWithSharedServiceVPC }}"
+    },
+    {
+      "ParameterKey": "pSharedServicesVPC",
+      "ParameterValue": "{{ cookiecutter.pSharedServicesVPC }}"
+    },
+    {
+      "ParameterKey": "pVPCFlowLogsRole",
+      "ParameterValue": "nlm_vpc_flowlog"
+    }
+  ]
+}

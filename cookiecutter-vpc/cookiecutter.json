@@ -1,0 +1,57 @@
+{
+  "account": "int",
+  "vpc": "000",
+  "region": "us-east-1",
+  "pRegionDomain": "us-east-1",
+  "pUseThreeAZs": "y",
+  "pRegionAZ1Name": "us-east-1d",
+  "pRegionAZ2Name": "us-east-1e",
+  "pRegionAZ3Name": "us-east-1f",
+  "pPeerWithSharedServiceVPC": ["y","n"],
+  "pSharedServicesVPC": "shared-services",
+  "pVPCFlowLogsRole": "nlm_vpc_flowlog",
+
+  "pVPCCIDR": "",
+
+  "pPublicSubnetACIDR": "",
+  "pPublicSubnetBCIDR": "",
+  "pPublicSubnetCCIDR": "",
+  "pPublicSupernet": "",
+
+  "pCreateBambooSubnets": ["y","n"],
+  "pBambooPrivateSubnetACIDR": "",
+  "pBambooPrivateSubnetBCIDR": "",
+  "pBambooPrivateSubnetCCIDR": "",
+  "pBambooSupernet": "",
+
+  "pCreateLambdaSubnets": ["y","n"],
+  "pLambdaPrivateSubnetACIDR": "",
+  "pLambdaPrivateSubnetBCIDR": "",
+  "pLambdaPrivateSubnetCCIDR": "",
+  "pLambdaSupernet": "",
+
+  "pAppName": "",
+  "pCreateAppSubnets": ["y","n"],
+  "pAppPrivateSubnetACIDR": "",
+  "pAppPrivateSubnetBCIDR": "",
+  "pAppPrivateSubnetCCIDR": "",
+  "pAppSupernet": "",
+
+  "pCreateDBSubnets": ["y","n"],
+  "pDBPrivateSubnetACIDR": "",
+  "pDBPrivateSubnetBCIDR": "",
+  "pDBPrivateSubnetCCIDR": "",
+  "pDBSupernet": "",
+
+  "pCreateSearchSubnets": ["y","n"],
+  "pSearchPrivateSubnetACIDR": "",
+  "pSearchPrivateSubnetBCIDR": "",
+  "pSearchPrivateSubnetCCIDR": "",
+  "pSearchSupernet": "",
+
+  "pCreateProxySubnets": ["n","y"],
+  "pProxyPrivateSubnetACIDR": "",
+  "pProxyPrivateSubnetBCIDR":"",
+  "pProxyPrivateSubnetCCIDR": "",
+  "pProxySupernet": ""
+}
